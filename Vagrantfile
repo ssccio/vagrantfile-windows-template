@@ -13,7 +13,7 @@ Vagrant.configure("2") do |config|
     win.vm.network "public_network"
 
     win.vm.provider "vmware_desktop" do |vm|
-      # Display the VirtualBox GUI when booting the machine
+      # Display the GUI when booting the machine
       vm.gui = true
       vm.vmx["ethernet0.pcislotnumber"] = "33"
 
